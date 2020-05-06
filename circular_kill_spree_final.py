@@ -7,7 +7,7 @@ def fusion_reactor(ivar):
 	global kill
 	global i
 	
-	while ivar <= len(arr): 
+	while ivar <= len(arr):
 		kill.append(arr[ivar])
 		ivar += 2
 		if ivar >= len(arr):
@@ -20,7 +20,7 @@ while True :
 	fusion_reactor(i)
 	arr = list(set(arr).difference(set(kill)))
 	arr.sort()
-	if len(arr) == 1 and len(kill) == 1:
+	if len(arr) == 1:
 		print("The Last person alive is :",arr[0])
 		break
 	kill = []
